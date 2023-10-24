@@ -2,6 +2,9 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
+	import { storePopup } from '@skeletonlabs/skeleton';
+	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
 </script>
 
 <!-- App Shell -->
@@ -10,9 +13,9 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Skeleton</strong>
+				<strong class="text-xl uppercase">Toby Voice Assistant</strong>
 			</svelte:fragment>
-			<svelte:fragment slot="trail">
+			<!-- <svelte:fragment slot="trail">
 				<a
 					class="btn btn-sm variant-ghost-surface"
 					href="https://discord.gg/EXqV7W8MtY"
@@ -37,7 +40,7 @@
 				>
 					GitHub
 				</a>
-			</svelte:fragment>
+			</svelte:fragment> -->
 		</AppBar>
 	</svelte:fragment>
 	<!-- Page Route Content -->
